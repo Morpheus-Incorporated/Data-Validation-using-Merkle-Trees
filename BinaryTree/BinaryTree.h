@@ -4,6 +4,7 @@
 #include <iostream>
 #include <queue>
 
+//Node Structure for the Binary Tree.
 struct Node
 {
     unsigned long long int key;
@@ -11,14 +12,15 @@ struct Node
     struct Node* rchild;
 };
 
+//Class Structure for Binary Tree using Struture Node.
 class Binary_Tree
 {
     public:
 
         Binary_Tree();
         Binary_Tree(int);
-        struct Node* get_Root() const;
-        int getHeight(struct Node* node);
+        struct Node* getRoot() const;
+        int getHeight(struct Node* node);                            //To return the height of the Binary Tree.
 
         struct Node* newNode(unsigned long long int);
         void insert(unsigned long long  int key);
@@ -32,9 +34,9 @@ class Binary_Tree
     private:
         struct Node* root;
         struct Node* currentRoot;
+        std::queue <struct Node*> nodeQueue;
         int count;
-        std::queue<struct Node*> q;
-        void insertKey(unsigned long long int);
+        void insertKey(unsigned long long int);                       //Actual insert function to insert Hash values into the tree.
 };
 
 #endif // BINARY_TREE_H
