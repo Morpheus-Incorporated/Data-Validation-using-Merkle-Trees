@@ -1,4 +1,4 @@
-#include "Merkle_Tree.h"
+#include "MerkleTree.h"
 #include <iostream>
 #include <cstring>
 #include <string>
@@ -104,10 +104,10 @@ Merkle_Tree::~Merkle_Tree()
 }
 
 // Simple helper function to convert string into unsigned int char array.
-char* string_to_uschp (string s)
+char* string_to_uschp(string s)
 {
-    int n = s.length();
-    char*char_array = new char[n+1];
-    strcpy(char_array, s.c_str());
-    return char_array;
+	int n = s.length();
+	char*char_array = new char[n + 1];
+	strcpy(char_array, s.c_str());
+	return char_array;
 }

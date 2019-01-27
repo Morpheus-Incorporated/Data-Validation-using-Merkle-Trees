@@ -1,7 +1,7 @@
 #ifndef MERKLE_TREE_H
 #define MERKLE_TREE_H
 
-#include "../Binary_Tree/Binary_Tree.h"
+#include "../BinaryTree/BinaryTree.h"
 
 class Merkle_Tree : public Binary_Tree
 {

@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+*.ipch
+*.json
+*.sqlite
+*.db
+.vs/Data-Validation-using-Merkle-Trees/v15/.suo
+*.opendb

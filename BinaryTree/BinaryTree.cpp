@@ -1,4 +1,4 @@
-#include "Binary_Tree.h"
+#include "BinaryTree.h"
 #include <iostream>
 #include <queue>
 
@@ -24,10 +24,10 @@ Binary_Tree::Binary_Tree(int value)
 //Function to create a new node in the Merkle Tree.
 struct Node* Binary_Tree::newNode(unsigned long long  int item)
 {
-    struct Node *temp =  new struct Node;
-    temp->key = item;
-    temp->lchild = temp->rchild = NULL;
-    return temp;
+    struct Node *ptr =  new struct Node;
+    ptr->key = item;
+    ptr->lchild = ptr->rchild = NULL;
+    return ptr;
 }
 
 //Getter function to return the root pointer of the Current Binary Tree.
@@ -63,21 +63,21 @@ void Binary_Tree::insertKey(unsigned long long  int key)
 void Binary_Tree::levelOrderTraversal(struct Node* root) const
 {
     std::queue <struct Node*> nodeQueue;
-    struct Node *temp = root;
+    struct Node *ptr = root;
     int nodeCount = 1;
-    while(temp)
+    while(ptr)
     {
         std::cout<<endl;
-        std::cout<<nodeCount++<<" "<<temp->key<<' ';
-        if(temp->lchild != NULL)
+        std::cout<<nodeCount++<<" "<<ptr->key<<' ';
+        if(ptr->lchild != NULL)
         {
-            nodeQueue.push(temp->lchild);
+            nodeQueue.push(ptr->lchild);
         }
-        if(temp->rchild != NULL)
+        if(ptr->rchild != NULL)
         {
-            nodeQueue.push(temp->rchild);
+            nodeQueue.push(ptr->rchild);
         }
-        temp=nodeQueue.front();
+        ptr=nodeQueue.front();
         nodeQueue.pop();
     }
 }
