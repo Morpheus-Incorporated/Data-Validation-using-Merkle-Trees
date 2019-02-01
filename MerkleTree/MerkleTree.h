@@ -10,13 +10,13 @@ class Merkle_Tree : public Binary_Tree
         Merkle_Tree(int);
         unsigned long long int getMasterRoot() const;
         unsigned long long int* createMerkleTree(char**,int);             // Constructs the Tree from Leaf to the root and also generates the Master Hash iteratively.
-        unsigned long long int hashGenerator(char *str);                  // Hash Generator function to generate Hashes for the Data Nodes.
         void generateMasterHash(struct Node*);
         virtual ~Merkle_Tree();
 
     protected:
 
     private:
+      unsigned long long int hashGenerator(char *str);                  // Hash Generator function to generate Hashes for the Data Nodes.
 
 };
 

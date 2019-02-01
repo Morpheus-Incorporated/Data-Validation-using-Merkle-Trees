@@ -20,7 +20,7 @@ class Binary_Tree
         Binary_Tree();
         Binary_Tree(int);
         struct Node* getRoot() const;
-        int getHeight(struct Node* node);                            //To return the height of the Binary Tree.
+        int getHeight(struct Node* node)const;                            //To return the height of the Binary Tree.
 
         struct Node* newNode(unsigned long long int);
         void insert(unsigned long long  int key);

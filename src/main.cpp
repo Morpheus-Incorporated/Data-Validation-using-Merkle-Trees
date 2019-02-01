@@ -11,6 +11,7 @@ using namespace std;
 char** stringProcess(string inputString,int);
 int packetSize;
 
+// Menu Driven Program.
 int main()
 {
     cout<<"                                            Data Validation Program                "<<endl;
@@ -20,7 +21,7 @@ int main()
     char charInput,tamperFlag;
     string message,tamperedMessage;
     fstream masterHashFile,msgPacketsFile;
-    cin>>input;cin.clear();
+    cin>>input;
     cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     int splitSize;
@@ -92,12 +93,7 @@ int main()
             char *cstr = new char[inputFromFile.length() + 1];
             strcpy(cstr, inputFromFile.c_str());
             receiverMessage[i] = cstr;
-            //receiverMessage[i] = inputFromFile;
         }
-        /*for(int i=0;i < splitSize; i++ )
-        {
-          cout << receiverMessage[i] << endl;
-        }*/
         receiverPacketsFile.close();
         Merkle_Tree verification(1);
         unsigned long long int *hashArray2 = verification.createMerkleTree(receiverMessage,splitSize);
@@ -146,7 +142,7 @@ int main()
     return 0;
 }
 
-
+// The following function splits the given input string according to the required packet size.
 char** stringProcess(string inputString, int splitSize)
 {
     int length = inputString.length();
@@ -168,7 +164,7 @@ char** stringProcess(string inputString, int splitSize)
     }
     else
     {
-        int parityAdder = splitSize - (length % splitSize);
+        int parityAdder = splitSize - (length % splitSize);                     // Adding Parity bit for meeting the size requirements.
         for(int i=1; i<= parityAdder; i++)
         {
             inputString += "$";
