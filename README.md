@@ -1,5 +1,5 @@
 # Data-Validation-using-Merkle-Trees
-Data is being validated for its integrity using Merkle Trees.
+A Menu Driven Program used to validate strings of messages(Data) for its Integrity with the help of implementation of a specific Hash-Tree(Merkle-Trees).
 
 ### main.cpp
 Menu Driven Program for Data Validation.
