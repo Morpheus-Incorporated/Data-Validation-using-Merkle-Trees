@@ -1,1 +1,17 @@
 language: c++
+
+
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    github_token: $github_token
+    local_dir: build
+    on:
+      branch: master
+  - provider: releases
+    api_key: $github_token
+    #file:
+    #  - stepping-stone.tar.gz
+    skip_cleanup: true
+    on:
+      tags: true
