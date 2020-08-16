@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/github/license/Alien-Inc/Data-Validation-using-Merkle-Trees)
 
 
-##Intro
+## Intro
 
 A Menu Driven Program used to validate strings of messages(Data) for its Integrity with the help of implementation of a specific Hash-Tree(Merkle-Trees).
 
