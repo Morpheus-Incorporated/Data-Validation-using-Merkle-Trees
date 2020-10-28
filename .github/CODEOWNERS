@@ -2,13 +2,13 @@
 
 # These owners will be the default owners for everything in
 # the repo. Unless a later match takes precedence,
-# @EbenezerJesuraj will be requested for
+# @global-owner1 and @global-owner2 will be requested for
 # review when someone opens a pull request.
-*       @EbenezerJesuraj 
+*       @EbenezerJesuraj @dinx6
 
 # Order is important; the last matching pattern takes the most
 # precedence. When someone opens a pull request that only
-# modifies CPP files, only @EbenezerJesuraj (Currently No Individual CPP Owner has been Chosen Yet) and not the global
+# modifies CPP files, only @EbenezerJesuraj and not the global
 # owner(s) will be requested for a review.
 *.cpp    @EbenezerJesuraj
 
