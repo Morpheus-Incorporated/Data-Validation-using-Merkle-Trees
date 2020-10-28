@@ -23,8 +23,8 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 ## Any contributions you make will be under the GNU General Public License v3.0
 In short, when you submit code changes, your submissions are understood to be under the same [GNU General Public License v3.0 License] that covers the project. Feel free to contact the maintainers if that's a concern.
 
-## Report bugs using Github's Issues
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](); it's that Easy!
+## Report bugs using Github's [Issues](https://github.com/Alpha-Incorporated/Data-Validation-using-Merkle-Trees/issues)
+We use GitHub issues to track public bugs. Report a bug by [Opening a new issue](https://github.com/Alpha-Incorporated/Data-Validation-using-Merkle-Trees/issues/new); it's that Easy!
 
 **Great Bug Reports** tend to have:
 
