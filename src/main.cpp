@@ -3,8 +3,8 @@
 #include <cstring>
 #include <limits>
 
-#include "../BinaryTree/BinaryTree.h"
-#include "../MerkleTree/MerkleTree.h"
+#include "../BinaryTree/BinaryTree.hpp"
+#include "../MerkleTree/MerkleTree.hpp"
 
 using namespace std;
 
@@ -16,20 +16,28 @@ int main()
 {
     cout<<"                                            Data Validation Program                "<<endl;
     cout<<" 1 - Send a message"<<endl<<" 2 - Check for Validation"<<endl;
+
     int input;
     unsigned long int masterHash;
     char charInput,tamperFlag;
+
     string message,tamperedMessage;
     fstream masterHashFile,msgPacketsFile;
+
     cin>>input;
+
     cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
     int splitSize;
     unsigned long long int *hashArray;
+
     cout<<"Enter split size :";
     cin>>splitSize;
+
     cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
     if(splitSize == 2)
         splitSize = 2;
     else if(splitSize % 4 != 0)
@@ -37,18 +45,26 @@ int main()
     if(input == 1)
     {
         Merkle_Tree T(1);
+
         cout<<"Enter your message :";
+
         getline(cin,message,'\n');
+
         char** msgPackets = stringProcess(message,splitSize);
         hashArray = T.createMerkleTree(msgPackets,splitSize);
         cout<<endl;
+        
         T.levelOrderTraversal( T.getRoot() );
         masterHash = T.getMasterRoot();
+
         cout<<endl<<"The Master Hash is: "<<masterHash<<endl;
         cout<<"Do you want to tamper the msg (Y/n) :"<<endl;
+
         cin>>tamperFlag;
+
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        
         if(tamperFlag == 'n')
         {
             masterHashFile.open("masterHash.txt");
