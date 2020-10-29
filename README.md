@@ -40,6 +40,11 @@ This file contains the splitted msg packets which is usually sent over peer-peer
 ### masterHash.txt
 This file contains the hash-tree structure which is sent from a Trusted Source.
 
+## Contribution Guidelines
+
+### Rules/Guidelines should be followed by Open Source Contributors 
+
+Refer Contributing.md file for more details and also the Contributors Code Structure should follow CODE_OF_CONDUCT Guidelines present in the CODE_OF_CONDUCT.md File..
 
 ## Authors
 
