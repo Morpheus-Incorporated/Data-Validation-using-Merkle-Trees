@@ -1,4 +1,4 @@
-#include "MerkleTree.h"
+#include "MerkleTree.hpp"
 #include <iostream>
 #include <cstring>
 #include <string>
