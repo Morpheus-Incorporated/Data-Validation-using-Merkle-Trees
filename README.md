@@ -46,6 +46,12 @@ This file contains the hash-tree structure which is sent from a Trusted Source.
 
 Refer Contributing.md file for more details and also the Contributors Code Structure should follow CODE_OF_CONDUCT Guidelines present in the CODE_OF_CONDUCT.md File..
 
+## GitHub Wiki Pages
+
+Refer GitHub Wiki Pages for More Info,
+
+* **GitHub Wiki Pages** - [@EbenezerJesuraj](https://github.com/Alpha-Incorporated/Data-Validation-using-Merkle-Trees/wiki)
+
 ## Authors
 
 * **Ebenezer Jesuraj** - [@EbenezerJesuraj](https://github.com/EbenezerJesuraj)
